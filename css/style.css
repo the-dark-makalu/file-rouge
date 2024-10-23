@@ -1,55 +1,134 @@
-.logo{
-    text-align: right;
-    margin-top: 20px;
-}
-
 body {
     background-color: #041821;
-}
-
-h1 {
-    color: #e5e5e5;
-}
-
-h2 {
-    color: #e5e5e5;
-    font-size: xxx-large;
-}
-
-span {
-    color: #1bd79e;
-}
-
-p {
-    color: #808080;
-}
-
-nav{
+    color: white;
+  }
+  
+header {
+    border-bottom:#808080;
+    padding: 1.5em 0;
+  }
+  
+header h1 {
+    font-family: 'Yeseva One', cursive;
     text-align: center;
-    font-size: xx-large;
-}
-
-color{
-    color: #e5e5e5;
-    background-color: #1bd79e;
-    border: #1bd79e;
-}
-
-button{
-    color: #e5e5e5;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: lighter;
+  }
+  
+header h1 span {
+    color: #1bd79e;
+  }
+  
+header nav {
+    text-align: center;
+  }
+  
+header nav i {
+    margin: 1em 0.5em;
+  }
+  
+header nav a {
+    color: #ffffff;
+  }
+  
+main {
+    width: 90%;
+    margin: auto;
+    padding-top: 3em;
+  }
+  
+main h2 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 2em;
+  }
+  
+main h2 span {
+    color: #1bd79e;
+  }
+  
+main p {
+    color: #808080;
+    font-weight: lighter;
+    margin: 2em 0px;
+  }
+  
+main nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+  
+main nav button {
     background-color: #041821;
+    color: #ffffff;
     border: none;
-}
+    letter-spacing: 0.25em;
+    font-weight: lighter;
+    font-size: 0.5em;
+    padding: 0.5em;
+  }
+  
+main nav button:nth-child(2) {
+    background-color: #1bd79e;
+  }
 
 footer {
-    color: #808080;
     text-align: center;
-}
+    margin-top: 4em;
+    color: #e5e5e5;
+    font-weight: 100;
+    opacity: 0.5;
+  }
+  
+footer p {
+    margin-bottom: 1em;
+    font-size: 0.75em;
+  }
+  
+footer p:last-child {
+    font-size: 0.625em;
+  }
+  
+  @media screen and (min-width: 768px) {
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+    }
+  
+    main {
+      width: 80%;
+      margin: auto;
+    }
+  
+    main h2 {
+      font-size: 3em;
+    }
+  
+    main nav {
+      justify-content: center;
+      gap: 1em;
+    }
+  
+    main nav button {
+      font-size: 0.75em;
+    }
 
-div{
-    text-align: center;
-}
+    main p {
+      width: 80%;
+    }
+  }
 
-
-
-
+  @media screen and (min-width: 1024px) {
+  
+    main h2,
+    main p {
+      width: 60%;
+    }
+  
+    main nav button {
+      font-size: 1em;
+    }
+  }
