@@ -1,134 +1,165 @@
+/* Importation des polices depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,300&display=swap');
+
+html {
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.lightMode {
+  background-color: #ffffff; 
+  color: #041821; 
+}
+
 body {
-    background-color: #041821;
-    color: white;
-  }
-  
+  background-color: #041821; 
+  color: white; 
+}
+
+
 header {
-    border-bottom:#808080;
-    padding: 1.5em 0;
-  }
-  
+  border-bottom: #808080;
+  padding: 1.5em 0; /* Espace en haut et en bas */
+}
+
 header h1 {
-    font-family: 'Yeseva One', cursive;
-    text-align: center;
-    color: #ffffff;
-    font-size: 1.5em;
-    font-weight: lighter;
-  }
-  
-header h1 span {
-    color: #1bd79e;
-  }
-  
+  font-family: 'Yeseva One', cursive;
+  text-align: center;
+  color: #ffffff; 
+  font-size: 1.5em;
+  font-weight: lighter; /* Poids léger */
+}
+
+span {
+  color: #1bd79e;
+}
+
 header nav {
-    text-align: center;
-  }
-  
-header nav i {
-    margin: 1em 0.5em;
-  }
-  
+  text-align: center; 
+}
+
 header nav a {
-    color: #ffffff;
-  }
-  
+  color: #ffffff;
+}
+
 main {
-    width: 90%;
-    margin: auto;
-    padding-top: 3em;
-  }
-  
+  width: 90%; /* Largeur du contenu */
+  margin: auto;
+  padding-top: 3em; /* Espace en haut */
+}
+
+
 main h2 {
-    font-family: 'Yeseva One', cursive;
-    font-size: 2em;
-  }
-  
-main h2 span {
-    color: #1bd79e;
-  }
-  
+  font-family: 'Yeseva One', cursive; 
+  font-size: 2em; 
+}
+
 main p {
-    color: #808080;
-    font-weight: lighter;
-    margin: 2em 0px;
-  }
-  
+  color: #808080;
+  font-weight: lighter; /* Poids léger */
+  margin: 2em 0; /* Marges verticales */
+}
+
 main nav {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2em;
-  }
-  
+  display: flex; /* Utilise Flexbox pour la mise en page */
+  justify-content: space-between; /* Espacement entre les éléments */
+  margin-bottom: 2em; /* Espace en bas */
+}
+
 main nav button {
-    background-color: #041821;
-    color: #ffffff;
-    border: none;
-    letter-spacing: 0.25em;
-    font-weight: lighter;
-    font-size: 0.5em;
-    padding: 0.5em;
-  }
-  
+  background-color: #041821; 
+  color: #ffffff; 
+  border: none; 
+  letter-spacing: 0.25em; /* Espacement des lettres */
+  font-weight: lighter; /* Poids léger */
+  font-size: 0.5em; /* Taille de police */
+  padding: 0.5em; /* Espacement intérieur */
+}
+
 main nav button:nth-child(2) {
-    background-color: #1bd79e;
-  }
+  background-color: #1bd79e; 
+}
+
+.photo {
+  display: grid; /* Utilise une grille pour la mise en page */
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+  grid-gap: 0.5em; /* Espacement entre les éléments */
+}
+
+.photo img {
+  width: 100%; /* Prend toute la largeur de la cellule */
+  object-fit: cover; /* Couvre l'espace sans déformation */
+}
 
 footer {
-    text-align: center;
-    margin-top: 4em;
-    color: #e5e5e5;
-    font-weight: 100;
-    opacity: 0.5;
-  }
-  
+  text-align: center; 
+  margin-top: 4em; /* Espace au-dessus */
+  color: #e5e5e5; 
+  font-weight: 100; /* Poids léger */
+  opacity: 0.5; /* Transparence */
+}
+
 footer p {
-    margin-bottom: 1em;
-    font-size: 0.75em;
-  }
-  
-footer p:last-child {
-    font-size: 0.625em;
-  }
-  
-  @media screen and (min-width: 768px) {
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1em;
-    }
-  
-    main {
-      width: 80%;
-      margin: auto;
-    }
-  
-    main h2 {
-      font-size: 3em;
-    }
-  
-    main nav {
-      justify-content: center;
-      gap: 1em;
-    }
-  
-    main nav button {
-      font-size: 0.75em;
-    }
+  margin-bottom: 1em; /* Espace en bas */
+  font-size: 0.75em; 
+}
 
-    main p {
-      width: 80%;
-    }
+
+
+
+@media screen and (min-width: 768px) {
+  /* Pour les tablettes */
+
+  header {
+    display: flex; /* Mise en page en Flexbox */
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center; 
+    padding: 1em; /* Espacement intérieur */
   }
 
-  @media screen and (min-width: 1024px) {
-  
-    main h2,
-    main p {
-      width: 60%;
-    }
-  
-    main nav button {
-      font-size: 1em;
-    }
+  main {
+    width: 80%; /* Largeur réduite */
+    margin: center; 
   }
+
+  main h2 {
+    font-size: 3em;
+  }
+
+  main nav {
+    justify-content: center;
+    gap: 1em; /* Espacement entre les boutons */
+  }
+
+  main nav button {
+    font-size: 0.75em; /* Taille de police agrandie */
+  }
+
+  .photo {
+    grid-template-columns: repeat(5, 1fr); /* 5 colonnes égales */
+  }
+
+  main p {
+    width: 80%; /* Largeur des paragraphes */
+  }
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+  /* Pour les écrans de pc */
+
+  main h2,
+  main p {
+    width: 60%; /* Réduction de la largeur des titres et paragraphes */
+  }
+
+  main nav button {
+    font-size: 1em; /* Taille de police des boutons agrandie */
+  }
+
+  .photo {
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes égales */
+  }
+}
